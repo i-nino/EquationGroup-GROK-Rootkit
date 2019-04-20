@@ -22,4 +22,4 @@ The order in which GROK does it is as follows:
   albeit in the new memory region
 * it manipulates the stack again to execute the exact same next instruction, but in the new memory region
 
-The primary implementation is in **asmRoutines.asm**, with *ASM_HiddenCall* as the routine of interest.
+The driver implementation is in GROK_Explorations, with the "hidden" functionality implemented in **asmRoutines.asm**, with *ASM_HiddenCall* as the routine of interest.
