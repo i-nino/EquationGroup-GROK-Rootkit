@@ -6,15 +6,6 @@
 #include <ntifs.h>
 #include <ntimage.h>
 #include <intrin.h>
-
-///
-///<summary>Using ProcessHacker includes for data structs and APIs</summary>
-///
-#if defined(USE_PH_INCLUDES)
-#include <ntexapi.h>
-#include <ntmmapi.h>
-#endif
-
 #pragma warning(pop)
 
 #define GROK_NAME			L"Grok"
@@ -37,8 +28,6 @@
 
 #define PTR_TO_TYPE(type, ptr, offset)   \
     ((type*) PTR_TO_OFFSET((ptr), (offset)))
-
-
 
 extern "C" {
 
@@ -73,9 +62,6 @@ extern "C" {
 }
 
 
-
-
-
 namespace GROK {
     
     extern UNICODE_STRING uDeviceName;
@@ -94,7 +80,6 @@ namespace GROK {
         ULONG  FinalSize;
         PUCHAR CompressedDriver;
     };
-
 
 }
 
