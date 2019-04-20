@@ -22,4 +22,4 @@ The order in which GROK does it is as follows:
   albeit in the new memory region
 * it manipulates the stack again to execute the exact same next instruction, but in the new memory region
 
-The VS solution file is in GROK_Explorations, with the "hidden" functionality implemented in **asmRoutines.asm**, and *ASM_HiddenCall* being the routine of interest.
+The VS solution file is in GROK_Explorations, with the "hidden" functionality implemented in **asmRoutines.asm** and **gGrok.cpp**, and *ASM_HiddenCall* and *GROK::CreateHiddenDriver* being the routines of interest.
