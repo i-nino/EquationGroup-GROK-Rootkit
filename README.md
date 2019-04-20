@@ -25,3 +25,6 @@ The order in which GROK does it is as follows:
   execution to the driver that launched it, becoming only accessible through a function pointer in a global buffer at offset +0x40
 
 The VS solution file is in GROK_Explorations, with the "hidden" functionality implemented in **asmRoutines.asm** and **gGrok.cpp**, and *ASM_HiddenCall* and *GROK::CreateHiddenDriver* being the routines of interest.
+
+
+![Alt Text](grokTest.gif)
