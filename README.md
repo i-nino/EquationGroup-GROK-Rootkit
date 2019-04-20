@@ -27,4 +27,4 @@ The order in which GROK does it is as follows:
 The VS solution file is in GROK_Explorations, with the "hidden" functionality implemented in **asmRoutines.asm** and **gGrok.cpp**, and *ASM_HiddenCall* and *GROK::CreateHiddenDriver* being the routines of interest.
 
 
-                                         ![Alt Text](grokTest.gif)
+![Alt Text](grokTest.gif)
