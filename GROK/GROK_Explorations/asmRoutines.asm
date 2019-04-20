@@ -24,7 +24,7 @@ loopHashChar:
 	xor edx, ecx
 	add rax, 1
 	mov cl, [rax]
-	test cl, cl			;test NUL byte
+	test cl, cl		;test NUL byte
 	jnz loopHashChar
 	mov eax, edx		;return the hash
 exit:
@@ -109,7 +109,7 @@ runTheRoutine:
 	mov [rsp+r11+80h], rbx
 	mov [rsp+r11+88h], rbp
 	xor rbp, rbp
-	lea rbx, [rsp+r11+70h]				; store ogReturn in rbx
+	lea rbx, [rsp+r11+70h]			; store ogReturn in rbx
 	lea rsi, cleanupEverybodyCleanup	; you know it
 	ret
 ASM_HiddenCall endp
