@@ -21,5 +21,7 @@ The order in which GROK does it is as follows:
 * once relocations are performed, it manipulates the return address to point accurately to the same routine,
   albeit in the new memory region
 * it manipulates the stack again to execute the exact same next instruction, but in the new memory region
+* then it encrypts its "new self" (but not anything that would disrupt its functionality) and eventually returns 
+  execution to the driver that launched it, becoming only accessible through a function pointer in a global buffer at offset +0x40
 
 The VS solution file is in GROK_Explorations, with the "hidden" functionality implemented in **asmRoutines.asm** and **gGrok.cpp**, and *ASM_HiddenCall* and *GROK::CreateHiddenDriver* being the routines of interest.
