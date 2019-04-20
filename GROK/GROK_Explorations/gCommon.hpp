@@ -8,8 +8,8 @@
 #include <intrin.h>
 #pragma warning(pop)
 
-#define GROK_NAME			L"Grok"
-#define GROK_DRIVERNAME		L"Grok.sys"
+#define GROK_NAME           L"Grok"
+#define GROK_DRIVERNAME	    L"Grok.sys"
 #define ALLOC_TAG           'KORG'
 
 
