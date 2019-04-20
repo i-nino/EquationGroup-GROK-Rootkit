@@ -1,4 +1,4 @@
-# Vault7-GROK-Rootkit
+# Vault7 GROK Rootkit
 
 
 Demonstrates GROK's use of manipulating the stack in order to make "hidden" function calls, in a similar fashion (although GROK's is far more intricate) to certain exploits which "find themselves"(IP) in memory. It also demonstrates how GROK manually maps a compressed driver in such a way, that transfering execution to that compressed driver is done via some pretty slick stack manipulation techniques, making it appear as though an "address switch" has taken place.  But it's system space, so ... not really!  Still, very impressive.
